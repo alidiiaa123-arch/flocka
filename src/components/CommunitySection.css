@@ -1,0 +1,46 @@
+.community-section {
+  position: relative;
+  padding: var(--spacing-section) var(--spacing-container);
+  background-color: var(--bg-color);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.community-bg-circle {
+  position: absolute;
+  width: 80vw;
+  height: 80vw;
+  max-width: 800px;
+  max-height: 800px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(59, 79, 66, 0.15) 0%, rgba(5, 5, 5, 0) 70%);
+  z-index: 0;
+  top: -20%;
+  left: -10%;
+  filter: blur(40px);
+}
+
+.community-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  text-align: center;
+}
+
+.community-headline {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 500;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 30px;
+  line-height: 1.1;
+}
+
+.community-copy {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
