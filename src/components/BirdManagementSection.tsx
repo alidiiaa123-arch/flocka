@@ -50,7 +50,7 @@ export function BirdManagementSection() {
     }}>
       {/* Background Image Parallax */}
       <div style={{ position: 'absolute', top: '-10%', left: 0, width: '100%', height: '120%', zIndex: 0, overflow: 'hidden' }}>
-        <img className="bird-bg-parallax" src="/images/editorial-budgie.jpg" alt="Budgerigar" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.15, filter: 'sepia(0.2) hue-rotate(-10deg)' }} />
+        <img className="bird-bg-parallax" src={`${import.meta.env.BASE_URL}images/editorial-budgie.jpg`} alt="Budgerigar" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.15, filter: 'sepia(0.2) hue-rotate(-10deg)' }} />
       </div>
 
       <div className="content-max flex-split">
@@ -112,7 +112,7 @@ export function BirdManagementSection() {
                   animation: slowDrift 20s ease-in-out infinite;
                 }
               `}</style>
-              <img src="/images/editorial-budgie.jpg" alt="Sunny" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src={`${import.meta.env.BASE_URL}images/editorial-budgie.jpg`} alt="Sunny" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                <div style={{ position: 'absolute', top: '16px', right: '16px', width: '32px', height: '32px', backgroundColor: 'var(--bg-card)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-green)', fontWeight: 'bold' }}>♂</div>
             </div>
             

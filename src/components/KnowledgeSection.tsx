@@ -49,7 +49,7 @@ export function KnowledgeSection() {
         {/* Visual Element */}
         <div className="flex-col" style={{ position: 'relative', minHeight: '500px' }}>
           <div style={{ position: 'absolute', top: 0, left: 0, width: '90%', height: '90%', borderRadius: 'var(--radius-card)', overflow: 'hidden', boxShadow: '0 40px 100px rgba(0,0,0,0.1)' }}>
-            <img src="/images/knowledge-avian.jpg" alt="Avian Knowledge" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src={`${import.meta.env.BASE_URL}images/knowledge-avian.jpg`} alt="Avian Knowledge" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <div className="knowledge-card mobile-stack" style={{ position: 'absolute', bottom: '5%', right: '0', width: '300px', maxWidth: '100%', backgroundColor: 'var(--bg-ivory)', borderRadius: 'var(--radius-card)', padding: '2rem', boxShadow: '0 30px 60px rgba(0,0,0,0.15)', zIndex: 10 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>

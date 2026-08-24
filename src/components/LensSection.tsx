@@ -138,7 +138,7 @@ export function LensSection() {
       >
         {/* Layer 1: BASE IMAGE (Empty Nest) */}
         <img 
-          src="/images/budgie_nest_empty.jpg" 
+          src={`${import.meta.env.BASE_URL}images/budgie_nest_empty.jpg`} 
           alt="Empty Budgie Nest" 
           style={{
             position: 'absolute',
@@ -163,7 +163,7 @@ export function LensSection() {
           }}
         >
           <img 
-            src="/images/budgie_nest_active.jpg" 
+          src={`${import.meta.env.BASE_URL}images/budgie_nest_active.jpg`} 
             alt="Thriving Budgie Nest" 
             style={{
               position: 'absolute',

@@ -29,7 +29,11 @@ export function CinematicHero() {
       const img = new Image();
       // Pad with leading zeros to match frame_0001.jpg
       const paddedIndex = String(i).padStart(4, '0');
-      img.src = `/hero/frames/frame_${paddedIndex}.jpg`;
+      
+      // Use Vite's BASE_URL to correctly resolve the path when hosted on GitHub Pages
+      const baseUrl = import.meta.env.BASE_URL;
+      const cleanBase = baseUrl.endsWith('/') ? baseUrl : baseUrl + '/';
+      img.src = `${cleanBase}hero/frames/frame_${paddedIndex}.jpg`;
       
       img.onload = () => {
         loaded++;

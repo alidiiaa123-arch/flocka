@@ -31,7 +31,7 @@ export function AuthLayout() {
         </div>
 
         <img 
-          src="/images/auth_visual.jpg" 
+          src={`${import.meta.env.BASE_URL}images/auth_visual.jpg`} 
           alt="Flocka Care Environment" 
           style={{
             position: 'absolute',

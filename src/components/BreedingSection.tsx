@@ -86,7 +86,7 @@ export function BreedingSection() {
 
       {/* Background imagery - fixed relative to the pin container */}
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100vh', pointerEvents: 'none', overflow: 'hidden' }}>
-        <img src="/images/editorial-budgie.jpg" alt="Budgie" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.1, filter: 'blur(2px) sepia(0.2) hue-rotate(-10deg)' }} />
+        <img src={`${import.meta.env.BASE_URL}images/editorial-budgie.jpg`} alt="Budgie" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.1, filter: 'blur(2px) sepia(0.2) hue-rotate(-10deg)' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, var(--bg-ivory) 30%, transparent 100%)' }}></div>
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, var(--bg-ivory) 0%, transparent 20%, transparent 80%, var(--bg-ivory) 100%)' }}></div>
       </div>
